@@ -1,0 +1,28 @@
+{
+  "real_function_calling": true,
+  "preview_trace": [
+    "classify",
+    "tools",
+    "respond"
+  ],
+  "confirmation_trace": [
+    "classify",
+    "tools",
+    "respond"
+  ],
+  "query_trace": [
+    "classify",
+    "tools",
+    "respond"
+  ],
+  "unsupported_query": {
+    "status": "handoff_pending",
+    "reason": "max_clarification",
+    "initial_status": "active",
+    "cited_ids": [],
+    "trace": [
+      "classify",
+      "handoff"
+    ]
+  }
+}

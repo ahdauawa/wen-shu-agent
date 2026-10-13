@@ -1,0 +1,322 @@
+{
+  "description": "Manually authored Chinese questions against the pinned English Zulip corpus. Expected labels are document IDs, not answer-level ground truth. 12 calibration and 30 test cases fixed before embedding evaluation.",
+  "cases": [
+    {
+      "id": "cal-1",
+      "split": "calibration",
+      "query": "忘记 Zulip 密码，还能收到邮件，怎样找回？",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ]
+    },
+    {
+      "id": "cal-2",
+      "split": "calibration",
+      "query": "我不想让所有组织成员看到我的邮箱，在哪里限制？",
+      "expected_docs": [
+        "zulip-configure-email-visibility"
+      ]
+    },
+    {
+      "id": "cal-3",
+      "split": "calibration",
+      "query": "机器人类型中的 incoming webhook 有什么权限？",
+      "expected_docs": [
+        "zulip-bots-overview"
+      ]
+    },
+    {
+      "id": "cal-4",
+      "split": "calibration",
+      "query": "只对一个频道设置通知，怎么操作？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ]
+    },
+    {
+      "id": "cal-5",
+      "split": "calibration",
+      "query": "个人 API key 泄露后应该做什么？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ]
+    },
+    {
+      "id": "cal-6",
+      "split": "calibration",
+      "query": "终止 Zulip 付费订阅之后什么时候降级？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ]
+    },
+    {
+      "id": "cal-7",
+      "split": "calibration",
+      "query": "明天成都天气怎么样？",
+      "expected_docs": []
+    },
+    {
+      "id": "cal-8",
+      "split": "calibration",
+      "query": "帮我解一道微积分题。",
+      "expected_docs": []
+    },
+    {
+      "id": "cal-9",
+      "split": "calibration",
+      "query": "我在淘宝买的手机什么时候送到？",
+      "expected_docs": []
+    },
+    {
+      "id": "cal-10",
+      "split": "calibration",
+      "query": "Zulip 给我的账号专属优惠券代码是什么？",
+      "expected_docs": []
+    },
+    {
+      "id": "cal-11",
+      "split": "calibration",
+      "query": "我的组织本月的实际账单编号是多少？",
+      "expected_docs": []
+    },
+    {
+      "id": "cal-12",
+      "split": "calibration",
+      "query": "这家软件公司的上市股票代码是什么？",
+      "expected_docs": []
+    },
+    {
+      "id": "test-1",
+      "split": "test",
+      "query": "我还记得旧密码，想在个人设置里更换它。",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ]
+    },
+    {
+      "id": "test-2",
+      "split": "test",
+      "query": "Zulip 密码记不得了，如何从登录页面重设？",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ],
+      "llm_check": true
+    },
+    {
+      "id": "test-3",
+      "split": "test",
+      "query": "新注册用户的邮箱默认可见范围能由管理员统一修改吗？",
+      "expected_docs": [
+        "zulip-configure-email-visibility"
+      ]
+    },
+    {
+      "id": "test-4",
+      "split": "test",
+      "query": "设置频道通知后会覆盖默认通知吗？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ]
+    },
+    {
+      "id": "test-5",
+      "split": "test",
+      "query": "所有频道默认的提醒要在哪里设置？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ]
+    },
+    {
+      "id": "test-6",
+      "split": "test",
+      "query": "游客可以查看没有订阅的公开频道吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ]
+    },
+    {
+      "id": "test-7",
+      "split": "test",
+      "query": "私密频道使用 protected history，新加入的人能看之前的消息吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ],
+      "llm_check": true
+    },
+    {
+      "id": "test-8",
+      "split": "test",
+      "query": "没有加入私密频道的管理员默认能读取里面的聊天吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ]
+    },
+    {
+      "id": "test-9",
+      "split": "test",
+      "query": "web-public 频道未登录也可以阅读吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ]
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "query": "集成服务该使用个人 API 密钥还是 bot 的密钥？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ]
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "query": "重新生成个人 API key 对手机端登录有什么影响？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ]
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "query": "取消付费套餐后旧消息会马上被删除吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ]
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "query": "使用发票付款可以选择自动管理许可证吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ]
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "query": "停用一个成员之后，已经买的剩余许可证是否退款？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "llm_check": true
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "query": "使用手动许可证管理，到达数量上限还能邀请新人加入吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ]
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "query": "付费期间增加一个许可证，新增费用如何计算？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ]
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "query": "outgoing webhook bot 在什么情况下收到消息？",
+      "expected_docs": [
+        "zulip-bots-overview"
+      ]
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "query": "如何更换个人账户的电子邮件地址？",
+      "expected_docs": [
+        "zulip-change-your-email-address"
+      ]
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "query": "怎样更改 Zulip 个人头像？",
+      "expected_docs": [
+        "zulip-change-your-profile-picture"
+      ]
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "query": "如何调整 Zulip 界面的语言？",
+      "expected_docs": [
+        "zulip-change-your-language"
+      ]
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "query": "个人账户的时区怎么修改？",
+      "expected_docs": [
+        "zulip-change-your-timezone"
+      ]
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "query": "如何切换十二小时和二十四小时时间显示？",
+      "expected_docs": [
+        "zulip-change-the-time-format"
+      ]
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "query": "如何在 Zulip 搜索历史消息？",
+      "expected_docs": [
+        "zulip-search-for-messages"
+      ]
+    },
+    {
+      "id": "test-24",
+      "split": "test",
+      "query": "如何从当前设备退出 Zulip 账号？",
+      "expected_docs": [
+        "zulip-logging-out"
+      ]
+    },
+    {
+      "id": "test-25",
+      "split": "test",
+      "query": "我的组织下个月的精确应付金额是多少？",
+      "expected_docs": [],
+      "llm_check": true
+    },
+    {
+      "id": "test-26",
+      "split": "test",
+      "query": "请告诉我用户小王的登录密码。",
+      "expected_docs": []
+    },
+    {
+      "id": "test-27",
+      "split": "test",
+      "query": "明年 Zulip 一定会推出什么新功能？",
+      "expected_docs": []
+    },
+    {
+      "id": "test-28",
+      "split": "test",
+      "query": "京东订单的快递现在到哪里了？",
+      "expected_docs": [],
+      "llm_check": true
+    },
+    {
+      "id": "test-29",
+      "split": "test",
+      "query": "帮我推荐附近的川菜餐厅。",
+      "expected_docs": []
+    },
+    {
+      "id": "test-30",
+      "split": "test",
+      "query": "给我一份 Python 快速排序代码。",
+      "expected_docs": []
+    }
+  ]
+}

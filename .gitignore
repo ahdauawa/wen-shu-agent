@@ -12,6 +12,7 @@ data/
 reports/
 *.log
 .pytest_cache/
+.test-tmp/
 .coverage
 dist/
 build/

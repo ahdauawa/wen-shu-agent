@@ -26,7 +26,7 @@ CASES = {
 def main():
     with tempfile.TemporaryDirectory() as folder:
         settings = Settings(_env_file=None, api_keys="evaluation-fixture-key-only",
-                            db_path=Path(folder)/"eval.sqlite3", model_mode="offline", retrieval_mode="lexical")
+                            db_path=Path(folder)/"eval.sqlite3", model_mode="offline", retrieval_mode="lexical", knowledge_source="faq")
         app = create_app(settings)
         headers = {"X-API-Key": "evaluation-fixture-key-only"}
         results, latencies = [], []

@@ -1,0 +1,285 @@
+{
+  "repository": "zulip/zulip",
+  "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+  "retrieved_on": "2026-10-13",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "starlight_help/src/content/docs/change-your-password.mdx",
+      "git_blob_sha": "33b360682f7b42472e691a5348f2ce01c94e192f"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-your-email-address.mdx",
+      "git_blob_sha": "22c440fb95e84d859167e8c7a71823d7731c54a2"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-your-name.mdx",
+      "git_blob_sha": "426790639af6dac24ef88b3838c40aa85ac1fdb7"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-your-profile-picture.mdx",
+      "git_blob_sha": "8df7178683569eabcebda0f3b20ad5a57af4254e"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-your-language.mdx",
+      "git_blob_sha": "135698ec1c0c9af7766ff734ac392aeb3855dc55"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-your-timezone.mdx",
+      "git_blob_sha": "ca04e310a0140b5404012ea21989be82a6882fb6"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-the-time-format.mdx",
+      "git_blob_sha": "4aad042c896916e279a3e881a96262975b66b209"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-email-visibility.mdx",
+      "git_blob_sha": "2729d0546d82333e045364b9e1c61dfbda25ead2"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-authentication-methods.mdx",
+      "git_blob_sha": "24cd1449f659b8ab289dc60e3b5f8f22926ac4c9"
+    },
+    {
+      "path": "starlight_help/src/content/docs/channel-notifications.mdx",
+      "git_blob_sha": "544831a19135a200e454ba710d7ed0dbd0fee30f"
+    },
+    {
+      "path": "starlight_help/src/content/docs/channel-permissions.mdx",
+      "git_blob_sha": "1a2f778f7dec45b330912e6a126eda3f6e82c803"
+    },
+    {
+      "path": "starlight_help/src/content/docs/channel-posting-policy.mdx",
+      "git_blob_sha": "d98fb3802d0b284129804e3f769fb3cd7e56c729"
+    },
+    {
+      "path": "starlight_help/src/content/docs/archive-a-channel.mdx",
+      "git_blob_sha": "85b6945a11ba6f49b5e14654c99928a51fa8205c"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-the-privacy-of-a-channel.mdx",
+      "git_blob_sha": "b0f351731e05400caf3fda30d5f15168f5af3b72"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-the-channel-description.mdx",
+      "git_blob_sha": "d541f1f8ab3183e66b58a7860847c8e8fb9fa02a"
+    },
+    {
+      "path": "starlight_help/src/content/docs/change-the-color-of-a-channel.mdx",
+      "git_blob_sha": "604696617dcac3c81cf20f75ac3ae327f30efdf1"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-who-can-create-channels.mdx",
+      "git_blob_sha": "68371f773fc6b937744cb7679903d6fa08b6eff4"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-who-can-administer-a-channel.mdx",
+      "git_blob_sha": "0ab5ab11cb72a59b8a2250f1d0b38634527a2173"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-who-can-invite-to-channels.mdx",
+      "git_blob_sha": "067b5439a7c67bc62f38b3332b792ed66ec22066"
+    },
+    {
+      "path": "starlight_help/src/content/docs/configure-default-new-user-settings.mdx",
+      "git_blob_sha": "e13cff852c7ef374786f7a347a30014ea3b4b0c8"
+    },
+    {
+      "path": "starlight_help/src/content/docs/add-a-bot-or-integration.mdx",
+      "git_blob_sha": "5c9cf1189da82a82023f57a28fc1bb9cbe4b55da"
+    },
+    {
+      "path": "starlight_help/src/content/docs/bots-overview.mdx",
+      "git_blob_sha": "2578b3e9bae905ef9bab437a5ca612a0f3ea2ac4"
+    },
+    {
+      "path": "starlight_help/src/content/docs/zulip-cloud-billing.mdx",
+      "git_blob_sha": "8d85187dad070d8684d57f3d7acae05fd827f148"
+    },
+    {
+      "path": "starlight_help/src/content/docs/logging-in.mdx",
+      "git_blob_sha": "2c48f7aea99843c95585c5f01e1954782f1b7f0a"
+    },
+    {
+      "path": "starlight_help/src/content/docs/logging-out.mdx",
+      "git_blob_sha": "907c7760dd12c35eac07e587d888c93928d73116"
+    },
+    {
+      "path": "starlight_help/src/content/docs/protect-your-account.mdx",
+      "git_blob_sha": "e23d4c451e83e806610a53927a7f1c7d6b5def19"
+    },
+    {
+      "path": "starlight_help/src/content/docs/search-for-messages.mdx",
+      "git_blob_sha": "256adcbbce0f3cb7b0744e0902e1063ff05d5dc0"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChangePasswordViaEmailConfirmation.mdx",
+      "git_blob_sha": "d2fcd41588288d76771be248294555183ce4e8ab"
+    },
+    {
+      "path": "starlight_help/src/content/include/_TranslationProjectInfo.mdx",
+      "git_blob_sha": "7e8eaba4f90465ba293c6714b0a73e59329e8427"
+    },
+    {
+      "path": "starlight_help/src/content/include/_AdminOnly.mdx",
+      "git_blob_sha": "d6fc15e16a799cafc1c3e6b6e30ab3b2a6825d90"
+    },
+    {
+      "path": "starlight_help/src/content/include/_OwnerOnly.mdx",
+      "git_blob_sha": "01301baa8a2dc1eaf1f188692f90e8252ba77a2f"
+    },
+    {
+      "path": "starlight_help/src/content/include/_SaveChanges.mdx",
+      "git_blob_sha": "89e1c72d20a613d5dc7a55d77d9133f1df35454f"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChannelActions.mdx",
+      "git_blob_sha": "c9f5e595559b3da4f80adfa3f8ee738a4db94858"
+    },
+    {
+      "path": "starlight_help/src/content/include/_SelectChannelViewPersonal.mdx",
+      "git_blob_sha": "1994f6e30c0ccc5f888fe72b7467447b0e80be3e"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChannelAdminPermissions.mdx",
+      "git_blob_sha": "013977d2424489f1ccc4e5dfefe786e2d30319de"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChannelPrivacyTypes.mdx",
+      "git_blob_sha": "3ac049dc586228c97461c146e0b2453e6721641a"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChannelsIntro.mdx",
+      "git_blob_sha": "867fbb5ba925015dff584eb8a906a4756b0b990f"
+    },
+    {
+      "path": "starlight_help/src/content/include/_WebPublicChannelsIntro.mdx",
+      "git_blob_sha": "09d9d6b74ab34590c8ca8d1b033926a368474509"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChannelSettingsNavbarTip.mdx",
+      "git_blob_sha": "b35babf6cf4b888d74e6a532ab7ff5048836e2ff"
+    },
+    {
+      "path": "starlight_help/src/content/include/_SelectChannelViewPermissions.mdx",
+      "git_blob_sha": "fc7c2a21eb19463291fcec899cee07d3e8cceafe"
+    },
+    {
+      "path": "starlight_help/src/content/include/_SelectChannelViewGeneral.mdx",
+      "git_blob_sha": "0b0e325ec6aa2f484df84b902a61f001bbf44977"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ContentAccessDefinition.mdx",
+      "git_blob_sha": "514c4cd06360915387e15a9a1097d1f93c0eee06"
+    },
+    {
+      "path": "starlight_help/src/content/include/_DefaultUserSettingsList.mdx",
+      "git_blob_sha": "b8c2451c10e2043c470ae7f0409d065c8f8cdb8c"
+    },
+    {
+      "path": "starlight_help/src/content/include/_AutomaticBilling.mdx",
+      "git_blob_sha": "551c88999da4dd249c8d0d3de8d9384a30bfab7c"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ConfigureWhoCanManagePlans.mdx",
+      "git_blob_sha": "337c046c884ba0bb01c894a1b362a94450f29402"
+    },
+    {
+      "path": "starlight_help/src/content/include/_InternationalWireTransfers.mdx",
+      "git_blob_sha": "9d3b04837890cccce8c78f6ea3613e47a5bb76a3"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ManageBillingIntro.mdx",
+      "git_blob_sha": "ecf3d8c39bf2ef7411761c74923634860206f09d"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ManualAddLicenseInstructions.mdx",
+      "git_blob_sha": "bfb1503481bbc5c143847cb90b1b62938a407b5d"
+    },
+    {
+      "path": "starlight_help/src/content/include/_PayByInvoiceSteps.mdx",
+      "git_blob_sha": "109b1df98cbeb2c1eb95007614d5d64b5f53e011"
+    },
+    {
+      "path": "starlight_help/src/content/include/_PayByInvoiceWarning.mdx",
+      "git_blob_sha": "e8cae2957e2e78417429154b47c98b8606adcd44"
+    },
+    {
+      "path": "starlight_help/src/content/include/_PaymentOptions.mdx",
+      "git_blob_sha": "ea77b8f0dcf5001feaaf4bc8e2497d4b7abfd619"
+    },
+    {
+      "path": "starlight_help/src/content/include/_PlanUpgradeSteps.mdx",
+      "git_blob_sha": "d5a32c82e34085ee72231e9e332fa423f769135f"
+    },
+    {
+      "path": "starlight_help/src/content/include/_DesktopToggleSidebarTip.mdx",
+      "git_blob_sha": "e1ebd6a4b42ad94d5132631ce17edd34445cba53"
+    },
+    {
+      "path": "starlight_help/src/content/include/_MobileSwitchAccount.mdx",
+      "git_blob_sha": "2de56744fbc0587cdc35778e00d1af5a1a2fae41"
+    },
+    {
+      "path": "starlight_help/src/content/include/_SwitchingBetweenOrganizations.mdx",
+      "git_blob_sha": "1dd6a76f22d36d129e618ec37d21847409f14cb0"
+    },
+    {
+      "path": "starlight_help/src/content/include/_ChangePasswordAndAPIKey.mdx",
+      "git_blob_sha": "bc34b191c6a3a34080b30e6e3d7c563cde01cb23"
+    },
+    {
+      "path": "starlight_help/src/content/include/_MobileMenu.mdx",
+      "git_blob_sha": "37f437b49664b1ef62787e56ef1a4a8c2105ebb1"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "path": "NOTICE",
+      "git_blob_sha": "087f7b06168b54ef1a311bc750f1e74f6323f2a0"
+    },
+    {
+      "path": "starlight_help/src/components/NavigationSteps.astro",
+      "git_blob_sha": "2b3047995198536daa1d4f3d680a03951d8372aa"
+    },
+    {
+      "path": "starlight_help/src/components/SettingsSteps.astro",
+      "git_blob_sha": "7ea70f8316eade8a4af836ec64ab88ce764c7a00"
+    },
+    {
+      "path": "starlight_help/src/components/RelativeSteps.astro",
+      "git_blob_sha": "9a55a89eaa415de330e775e3ceace6f967669ff9"
+    }
+  ],
+  "documents": [
+    "starlight_help/src/content/docs/change-your-password.mdx",
+    "starlight_help/src/content/docs/change-your-email-address.mdx",
+    "starlight_help/src/content/docs/change-your-name.mdx",
+    "starlight_help/src/content/docs/change-your-profile-picture.mdx",
+    "starlight_help/src/content/docs/change-your-language.mdx",
+    "starlight_help/src/content/docs/change-your-timezone.mdx",
+    "starlight_help/src/content/docs/change-the-time-format.mdx",
+    "starlight_help/src/content/docs/configure-email-visibility.mdx",
+    "starlight_help/src/content/docs/configure-authentication-methods.mdx",
+    "starlight_help/src/content/docs/channel-notifications.mdx",
+    "starlight_help/src/content/docs/channel-permissions.mdx",
+    "starlight_help/src/content/docs/channel-posting-policy.mdx",
+    "starlight_help/src/content/docs/archive-a-channel.mdx",
+    "starlight_help/src/content/docs/change-the-privacy-of-a-channel.mdx",
+    "starlight_help/src/content/docs/change-the-channel-description.mdx",
+    "starlight_help/src/content/docs/change-the-color-of-a-channel.mdx",
+    "starlight_help/src/content/docs/configure-who-can-create-channels.mdx",
+    "starlight_help/src/content/docs/configure-who-can-administer-a-channel.mdx",
+    "starlight_help/src/content/docs/configure-who-can-invite-to-channels.mdx",
+    "starlight_help/src/content/docs/configure-default-new-user-settings.mdx",
+    "starlight_help/src/content/docs/add-a-bot-or-integration.mdx",
+    "starlight_help/src/content/docs/bots-overview.mdx",
+    "starlight_help/src/content/docs/zulip-cloud-billing.mdx",
+    "starlight_help/src/content/docs/logging-in.mdx",
+    "starlight_help/src/content/docs/logging-out.mdx",
+    "starlight_help/src/content/docs/protect-your-account.mdx",
+    "starlight_help/src/content/docs/search-for-messages.mdx"
+  ]
+}

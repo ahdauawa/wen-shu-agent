@@ -78,7 +78,20 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/health")
     def health():
         return {"status": "ok", "model_mode": settings.model_mode,
-                "retrieval_mode": settings.retrieval_mode, "faq_count": len(knowledge.faq)}
+                "retrieval_mode": settings.retrieval_mode, "knowledge_source": settings.knowledge_source,
+                "document_count": len(knowledge.documents), "chunk_count": len(knowledge.chunks),
+                "index_fingerprint": knowledge.fingerprint}
+
+    @app.get("/knowledge/documents")
+    def documents(owner: User):
+        return knowledge.inventory()
+
+    @app.get("/knowledge/documents/{document_id}")
+    def document(document_id: str, owner: User):
+        match = next((d for d in knowledge.documents if d["id"] == document_id), None)
+        if match is None:
+            raise HTTPException(404, "文档不存在")
+        return match
 
     @app.post("/sessions", status_code=201)
     def new_session(owner: User):
@@ -151,7 +164,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                     "text": text, "history": state["messages"],
                     "clarifications": state["clarifications"], "pending_ticket": state.get("pending_ticket"),
                     "status": "active", "reply": "", "reason": "", "evidence": [],
-                    "tool": None, "ticket": None, "handoff_id": None, "trace": [],
+                    "tool": None, "ticket": None, "handoff_id": None, "trace": [], "cited_ids": [],
                 }, {"recursion_limit": 12})
                 if result["intent"] != "unknown" and result["confidence"] >= settings.intent_threshold:
                     result["clarifications"] = 0
@@ -163,7 +176,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 response = {"request_id": request_id, "session_id": body.session_id,
                     **{k: result.get(k) for k in ("reply", "intent", "confidence", "status", "tool", "ticket", "handoff_id", "trace")},
                     "clarifications": updated["clarifications"], "needs_confirmation": bool(updated["pending_ticket"]),
-                    "sources": [{"id": d["id"], "source": d["source"], "score": d["score"]} for d in result["evidence"]],
+                    "sources": [{**{key: d.get(key) for key in ("id", "doc_id", "title", "section", "source", "score",
+                        "url", "upstream_url", "path", "revision", "line_start", "line_end")},
+                        "excerpt": d["answer"], "cited": d["id"] in result.get("cited_ids", [])} for d in result["evidence"]],
+                    "cited_ids": result.get("cited_ids", []),
                     "handoff_reason": result.get("reason"), "model_mode": settings.model_mode,
                     "retrieval_mode": settings.retrieval_mode,
                     "elapsed_ms": round((time.perf_counter()-started)*1000, 2)}

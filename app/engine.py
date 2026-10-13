@@ -5,7 +5,7 @@ from langgraph.graph import END, START, StateGraph
 
 from app.config import Settings
 from app.knowledge import Knowledge
-from app.model import Decision, Model, TicketCreate
+from app.model import Decision, Model, NoEvidenceError, TicketCreate
 from app.store import Store
 
 
@@ -24,6 +24,7 @@ class State(TypedDict, total=False):
     ticket: dict | None
     handoff_id: str | None
     trace: list[str]
+    cited_ids: list[str]
 
 
 def build_graph(settings: Settings, model: Model, knowledge: Knowledge,
@@ -93,8 +94,10 @@ def build_graph(settings: Settings, model: Model, knowledge: Knowledge,
         if state["intent"] == "chitchat":
             return tagged(state, "respond", reply="你好，我是问枢。可以咨询帮助文档、查询工单、提交问题或转人工。")
         try:
-            reply = model.answer(state["text"], state["history"], state["evidence"])
-            return tagged(state, "respond", reply=reply)
+            answer = model.answer_grounded(state["text"], state["history"], state["evidence"])
+            return tagged(state, "respond", **answer)
+        except NoEvidenceError:
+            return tagged(state, "respond", reason="insufficient_evidence")
         except Exception:
             return tagged(state, "respond", reason="model_failed")
 

@@ -1,0 +1,274 @@
+{
+  "documents": [
+    {
+      "id": "zulip-change-your-password",
+      "title": "Change your password",
+      "path": "documents/change-your-password.md",
+      "url": "https://zulip.com/help/change-your-password",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-password.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "c2b9832dfed06d4c79119a8c7432e740c8002a8c869c0b039e52aa05e9c3277f"
+    },
+    {
+      "id": "zulip-change-your-email-address",
+      "title": "Change your email address",
+      "path": "documents/change-your-email-address.md",
+      "url": "https://zulip.com/help/change-your-email-address",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-email-address.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "f9bac7e2efad564f7947759778079efe26eb71fb14b8b277b2a98c76637d4f0a"
+    },
+    {
+      "id": "zulip-change-your-name",
+      "title": "Change your name",
+      "path": "documents/change-your-name.md",
+      "url": "https://zulip.com/help/change-your-name",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-name.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "e37b3078ba8b5b668cb846ee1e4a816537035e9bb9aaa406e8e799021814e8fd"
+    },
+    {
+      "id": "zulip-change-your-profile-picture",
+      "title": "Change your profile picture",
+      "path": "documents/change-your-profile-picture.md",
+      "url": "https://zulip.com/help/change-your-profile-picture",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-profile-picture.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "dffd2a3cd78c0744121e973e54daeddd0f32232f2db7602592b3831b59e40bb7"
+    },
+    {
+      "id": "zulip-change-your-language",
+      "title": "Change your language",
+      "path": "documents/change-your-language.md",
+      "url": "https://zulip.com/help/change-your-language",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-language.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "240d76f123cbc2eeb6ebee6ff9a689babd014e6d2c9649ebf18411dbb60822b5"
+    },
+    {
+      "id": "zulip-change-your-timezone",
+      "title": "Change your time zone",
+      "path": "documents/change-your-timezone.md",
+      "url": "https://zulip.com/help/change-your-timezone",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-your-timezone.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "e11ce8638709f58749e8e0b5cecb10ee19e6cc999b20953a7116762c66104e58"
+    },
+    {
+      "id": "zulip-change-the-time-format",
+      "title": "Change the time format",
+      "path": "documents/change-the-time-format.md",
+      "url": "https://zulip.com/help/change-the-time-format",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-the-time-format.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "c174d11780ad7c5a3c2c0c03af3a2a16a764dea269a90a79cdd6b7c29d6a903e"
+    },
+    {
+      "id": "zulip-configure-email-visibility",
+      "title": "Configure email visibility",
+      "path": "documents/configure-email-visibility.md",
+      "url": "https://zulip.com/help/configure-email-visibility",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-email-visibility.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "d067b181910f90e7d56f0b08e62180f20bd7dc855127597df60df4c7d312505b"
+    },
+    {
+      "id": "zulip-configure-authentication-methods",
+      "title": "Configure authentication methods",
+      "path": "documents/configure-authentication-methods.md",
+      "url": "https://zulip.com/help/configure-authentication-methods",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-authentication-methods.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "fcec2e0b73e6e7cdef9a2875a1aa88081fb66d315cd36862c07a488eaae87e8d"
+    },
+    {
+      "id": "zulip-channel-notifications",
+      "title": "Channel notifications",
+      "path": "documents/channel-notifications.md",
+      "url": "https://zulip.com/help/channel-notifications",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/channel-notifications.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "d5fdeaa8a9104c0b256afceb3226c4fe73986d725a9d8d7ea34cbfd1357be7af"
+    },
+    {
+      "id": "zulip-channel-permissions",
+      "title": "Channel permissions",
+      "path": "documents/channel-permissions.md",
+      "url": "https://zulip.com/help/channel-permissions",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/channel-permissions.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "fc3f561550ddae1b57ccaeba0a3e02957ea074e84408530fede5f0caaf7e2751"
+    },
+    {
+      "id": "zulip-channel-posting-policy",
+      "title": "Channel posting policy",
+      "path": "documents/channel-posting-policy.md",
+      "url": "https://zulip.com/help/channel-posting-policy",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/channel-posting-policy.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "6e8f8e1eff6f89f93e3710fca4bbbe44c106018e548d50856a06107eb44fd7a3"
+    },
+    {
+      "id": "zulip-archive-a-channel",
+      "title": "Archive a channel",
+      "path": "documents/archive-a-channel.md",
+      "url": "https://zulip.com/help/archive-a-channel",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/archive-a-channel.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "c24528b97b59ef911573a9d6b37187923663ad2c3fac2638b7f35e62517a8950"
+    },
+    {
+      "id": "zulip-change-the-privacy-of-a-channel",
+      "title": "Change the privacy of a channel",
+      "path": "documents/change-the-privacy-of-a-channel.md",
+      "url": "https://zulip.com/help/change-the-privacy-of-a-channel",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-the-privacy-of-a-channel.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "2b5a876c2380e84c26764ff001073d31cb1c19ddc3461604248e9747189b2ab9"
+    },
+    {
+      "id": "zulip-change-the-channel-description",
+      "title": "Change a channel's description",
+      "path": "documents/change-the-channel-description.md",
+      "url": "https://zulip.com/help/change-the-channel-description",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-the-channel-description.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "1d63f8ad01a7263516b6124dbb920b1d2157192d1b88d598f5cd83a08d627891"
+    },
+    {
+      "id": "zulip-change-the-color-of-a-channel",
+      "title": "Change the color of a channel",
+      "path": "documents/change-the-color-of-a-channel.md",
+      "url": "https://zulip.com/help/change-the-color-of-a-channel",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/change-the-color-of-a-channel.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "9fc2d35b14d5cea1eb88275a3ec9a29f81f9dd877dfbdc2524c29e425b947f9c"
+    },
+    {
+      "id": "zulip-configure-who-can-create-channels",
+      "title": "Restrict channel creation",
+      "path": "documents/configure-who-can-create-channels.md",
+      "url": "https://zulip.com/help/configure-who-can-create-channels",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-who-can-create-channels.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "4f07f1e9e2d5163efbf3631b55c1c10ef24885ec56bd641574dafdc353637a5d"
+    },
+    {
+      "id": "zulip-configure-who-can-administer-a-channel",
+      "title": "Configure who can administer a channel",
+      "path": "documents/configure-who-can-administer-a-channel.md",
+      "url": "https://zulip.com/help/configure-who-can-administer-a-channel",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-who-can-administer-a-channel.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "052902f0845ab4c753633c5aa77f08a87cd8fb62f991218897b41f26cc28fa74"
+    },
+    {
+      "id": "zulip-configure-who-can-invite-to-channels",
+      "title": "Configure who can subscribe other users to channels",
+      "path": "documents/configure-who-can-invite-to-channels.md",
+      "url": "https://zulip.com/help/configure-who-can-invite-to-channels",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-who-can-invite-to-channels.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "8619feaac19ce175e06f44ca38c9b0603701707f260edf025f7752d4b7c38a02"
+    },
+    {
+      "id": "zulip-configure-default-new-user-settings",
+      "title": "Configure default settings for new users",
+      "path": "documents/configure-default-new-user-settings.md",
+      "url": "https://zulip.com/help/configure-default-new-user-settings",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/configure-default-new-user-settings.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "312641648babb7eda8f6f6c636562672a3bd68112c63ff33f20b2c1eb578000c"
+    },
+    {
+      "id": "zulip-add-a-bot-or-integration",
+      "title": "Add a bot or integration",
+      "path": "documents/add-a-bot-or-integration.md",
+      "url": "https://zulip.com/help/add-a-bot-or-integration",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/add-a-bot-or-integration.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "bc3170e252d79e1cc31845555d6d16da8ad3d0b6292758bddf6ac86c4ea6a4b8"
+    },
+    {
+      "id": "zulip-bots-overview",
+      "title": "Bots overview",
+      "path": "documents/bots-overview.md",
+      "url": "https://zulip.com/help/bots-overview",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/bots-overview.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "608366e90610763af8ddb8f5bc1aa601f653936833c877a333013b33ef9e8e5c"
+    },
+    {
+      "id": "zulip-zulip-cloud-billing",
+      "title": "Zulip Cloud billing",
+      "path": "documents/zulip-cloud-billing.md",
+      "url": "https://zulip.com/help/zulip-cloud-billing",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/zulip-cloud-billing.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "5550817d4c567925bc9c266f8a122abe7a002a3fe52b4c2a5fd809b744c3d094"
+    },
+    {
+      "id": "zulip-logging-in",
+      "title": "Logging in",
+      "path": "documents/logging-in.md",
+      "url": "https://zulip.com/help/logging-in",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/logging-in.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "fdca0feb6dcd0f0d1317c9ef6bff4cfc9b4b5ea57cb61c62f71ec37a9cbe7ee9"
+    },
+    {
+      "id": "zulip-logging-out",
+      "title": "Logging out",
+      "path": "documents/logging-out.md",
+      "url": "https://zulip.com/help/logging-out",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/logging-out.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "18796de1f010d92b94dcb856cda1f63c05ff4de95984c832a5679376b3e30f3a"
+    },
+    {
+      "id": "zulip-protect-your-account",
+      "title": "Protect your account",
+      "path": "documents/protect-your-account.md",
+      "url": "https://zulip.com/help/protect-your-account",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/protect-your-account.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "2773840be220e64ee8dc57cd96af759ffee8745f9f1e2dce5f28fd097e97a543"
+    },
+    {
+      "id": "zulip-search-for-messages",
+      "title": "Searching for messages",
+      "path": "documents/search-for-messages.md",
+      "url": "https://zulip.com/help/search-for-messages",
+      "upstream_url": "https://github.com/zulip/zulip/blob/dc257d7c3516fa1da4a52eedf694cb7733819a0d/starlight_help/src/content/docs/search-for-messages.mdx",
+      "revision": "dc257d7c3516fa1da4a52eedf694cb7733819a0d",
+      "license": "Apache-2.0",
+      "sha256": "1e5984bf28c09d3d961a7feee5e6919528f70c913beabda88f9720ffbecd0a3c"
+    }
+  ]
+}

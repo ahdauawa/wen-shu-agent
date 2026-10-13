@@ -1,0 +1,1663 @@
+{
+  "corpus": {
+    "source": "documents",
+    "document_count": 27,
+    "chunk_count": 152,
+    "index_fingerprint": "e43c09221971d21f2c76dc35"
+  },
+  "embedding_model": "BAAI/bge-m3@5617a9f61b028005a4858fdac845db406aefb181",
+  "dataset_sha256": "7bbd335f50d3a6c645c4a391bbea989a209e4d71127fc61e2bb9f7b035cc720d",
+  "calibration_count": 12,
+  "test_positive_count": 24,
+  "test_negative_count": 6,
+  "threshold": 0.58,
+  "threshold_method": "max balanced accuracy on calibration only; higher threshold breaks ties",
+  "raw_document_recall_at_5": 0.9583333333333334,
+  "filtered_document_recall_at_5": 0.875,
+  "mrr_at_5": 0.9375,
+  "negative_false_accept_count": 1,
+  "positive_rejection_count": 2,
+  "cases": [
+    {
+      "id": "cal-1",
+      "split": "calibration",
+      "query": "忘记 Zulip 密码，还能收到邮件，怎样找回？",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-logging-in:758-1554",
+          "doc_id": "zulip-logging-in",
+          "score": 0.6701
+        },
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6669
+        },
+        {
+          "id": "zulip-logging-in:0-758",
+          "doc_id": "zulip-logging-in",
+          "score": 0.6512
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:7025-7326",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6326
+        },
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6237
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-2",
+      "split": "calibration",
+      "query": "我不想让所有组织成员看到我的邮箱，在哪里限制？",
+      "expected_docs": [
+        "zulip-configure-email-visibility"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-configure-email-visibility:923-1289",
+          "doc_id": "zulip-configure-email-visibility",
+          "score": 0.6328
+        },
+        {
+          "id": "zulip-change-your-email-address:0-450",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.5986
+        },
+        {
+          "id": "zulip-configure-email-visibility:383-923",
+          "doc_id": "zulip-configure-email-visibility",
+          "score": 0.595
+        },
+        {
+          "id": "zulip-channel-permissions:4479-5276",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.5543
+        },
+        {
+          "id": "zulip-configure-who-can-create-channels:0-795",
+          "doc_id": "zulip-configure-who-can-create-channels",
+          "score": 0.5427
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "cal-3",
+      "split": "calibration",
+      "query": "机器人类型中的 incoming webhook 有什么权限？",
+      "expected_docs": [
+        "zulip-bots-overview"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-bots-overview:2022-2813",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.5823
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:503-1276",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.5581
+        },
+        {
+          "id": "zulip-bots-overview:1334-2122",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.5557
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:0-503",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.5021
+        },
+        {
+          "id": "zulip-channel-permissions:5176-5744",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.4612
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "cal-4",
+      "split": "calibration",
+      "query": "只对一个频道设置通知，怎么操作？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-notifications:398-1193",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.7441
+        },
+        {
+          "id": "zulip-channel-notifications:1093-1892",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.7231
+        },
+        {
+          "id": "zulip-configure-who-can-administer-a-channel:1346-1933",
+          "doc_id": "zulip-configure-who-can-administer-a-channel",
+          "score": 0.6413
+        },
+        {
+          "id": "zulip-channel-permissions:4479-5276",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6237
+        },
+        {
+          "id": "zulip-configure-who-can-invite-to-channels:2264-2374",
+          "doc_id": "zulip-configure-who-can-invite-to-channels",
+          "score": 0.608
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "cal-5",
+      "split": "calibration",
+      "query": "个人 API key 泄露后应该做什么？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6386
+        },
+        {
+          "id": "zulip-protect-your-account:907-1513",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6363
+        },
+        {
+          "id": "zulip-logging-out:985-1592",
+          "doc_id": "zulip-logging-out",
+          "score": 0.6214
+        },
+        {
+          "id": "zulip-bots-overview:3749-4393",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.5283
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:1384-2181",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5071
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "cal-6",
+      "split": "calibration",
+      "query": "终止 Zulip 付费订阅之后什么时候降级？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:3415-3763",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.7027
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8466-9265",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6193
+        },
+        {
+          "id": "zulip-logging-out:140-736",
+          "doc_id": "zulip-logging-out",
+          "score": 0.5579
+        },
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.5578
+        },
+        {
+          "id": "zulip-logging-out:736-985",
+          "doc_id": "zulip-logging-out",
+          "score": 0.5532
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "cal-7",
+      "split": "calibration",
+      "query": "明天成都天气怎么样？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-change-the-time-format:0-280",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.4136
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.3941
+        },
+        {
+          "id": "zulip-change-your-timezone:935-1080",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.3798
+        },
+        {
+          "id": "zulip-logging-out:0-140",
+          "doc_id": "zulip-logging-out",
+          "score": 0.3728
+        },
+        {
+          "id": "zulip-change-the-time-format:280-536",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.3653
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-8",
+      "split": "calibration",
+      "query": "帮我解一道微积分题。",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-search-for-messages:5083-5685",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.4219
+        },
+        {
+          "id": "zulip-logging-out:0-140",
+          "doc_id": "zulip-logging-out",
+          "score": 0.3945
+        },
+        {
+          "id": "zulip-search-for-messages:4552-5083",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.3902
+        },
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.3861
+        },
+        {
+          "id": "zulip-change-your-language:1613-2351",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.3709
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-9",
+      "split": "calibration",
+      "query": "我在淘宝买的手机什么时候送到？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.4395
+        },
+        {
+          "id": "zulip-change-your-email-address:450-994",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.4389
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8016-8466",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.4281
+        },
+        {
+          "id": "zulip-search-for-messages:503-969",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.4214
+        },
+        {
+          "id": "zulip-change-your-timezone:697-935",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.419
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-10",
+      "split": "calibration",
+      "query": "Zulip 给我的账号专属优惠券代码是什么？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6321
+        },
+        {
+          "id": "zulip-search-for-messages:5685-6121",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.6112
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:5740-6536",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6102
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.5988
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:378-1167",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5987
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-11",
+      "split": "calibration",
+      "query": "我的组织本月的实际账单编号是多少？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:2406-3072",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5034
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:1740-2406",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.4898
+        },
+        {
+          "id": "zulip-logging-in:2844-3633",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4895
+        },
+        {
+          "id": "zulip-logging-in:758-1554",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4741
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "cal-12",
+      "split": "calibration",
+      "query": "这家软件公司的上市股票代码是什么？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-configure-authentication-methods:0-773",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.4353
+        },
+        {
+          "id": "zulip-logging-in:0-758",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4325
+        },
+        {
+          "id": "zulip-configure-authentication-methods:673-1426",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.4183
+        },
+        {
+          "id": "zulip-logging-in:2151-2844",
+          "doc_id": "zulip-logging-in",
+          "score": 0.3985
+        },
+        {
+          "id": "zulip-bots-overview:400-753",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.3979
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-1",
+      "split": "test",
+      "query": "我还记得旧密码，想在个人设置里更换它。",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-your-password:750-1063",
+          "doc_id": "zulip-change-your-password",
+          "score": 0.7196
+        },
+        {
+          "id": "zulip-change-your-password:0-307",
+          "doc_id": "zulip-change-your-password",
+          "score": 0.7139
+        },
+        {
+          "id": "zulip-protect-your-account:907-1513",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6967
+        },
+        {
+          "id": "zulip-logging-out:985-1592",
+          "doc_id": "zulip-logging-out",
+          "score": 0.6822
+        },
+        {
+          "id": "zulip-logging-in:4539-5177",
+          "doc_id": "zulip-logging-in",
+          "score": 0.6732
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-2",
+      "split": "test",
+      "query": "Zulip 密码记不得了，如何从登录页面重设？",
+      "expected_docs": [
+        "zulip-change-your-password"
+      ],
+      "llm_check": true,
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6961
+        },
+        {
+          "id": "zulip-logging-in:2844-3633",
+          "doc_id": "zulip-logging-in",
+          "score": 0.6656
+        },
+        {
+          "id": "zulip-configure-authentication-methods:0-773",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.6577
+        },
+        {
+          "id": "zulip-logging-in:4539-5177",
+          "doc_id": "zulip-logging-in",
+          "score": 0.6563
+        },
+        {
+          "id": "zulip-logging-out:736-985",
+          "doc_id": "zulip-logging-out",
+          "score": 0.6518
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-3",
+      "split": "test",
+      "query": "新注册用户的邮箱默认可见范围能由管理员统一修改吗？",
+      "expected_docs": [
+        "zulip-configure-email-visibility"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-configure-email-visibility:923-1289",
+          "doc_id": "zulip-configure-email-visibility",
+          "score": 0.6909
+        },
+        {
+          "id": "zulip-change-your-email-address:0-450",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.6648
+        },
+        {
+          "id": "zulip-configure-email-visibility:0-383",
+          "doc_id": "zulip-configure-email-visibility",
+          "score": 0.6304
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:1324-1992",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.5884
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:667-1424",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.5819
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-4",
+      "split": "test",
+      "query": "设置频道通知后会覆盖默认通知吗？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-notifications:1959-2687",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.6442
+        },
+        {
+          "id": "zulip-channel-notifications:0-398",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.6437
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:1324-1992",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.6305
+        },
+        {
+          "id": "zulip-configure-who-can-administer-a-channel:1346-1933",
+          "doc_id": "zulip-configure-who-can-administer-a-channel",
+          "score": 0.5576
+        },
+        {
+          "id": "zulip-channel-permissions:4479-5276",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.5572
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-5",
+      "split": "test",
+      "query": "所有频道默认的提醒要在哪里设置？",
+      "expected_docs": [
+        "zulip-channel-notifications"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-notifications:1959-2687",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.706
+        },
+        {
+          "id": "zulip-channel-notifications:1093-1892",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.6586
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:1324-1992",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.6136
+        },
+        {
+          "id": "zulip-channel-posting-policy:698-896",
+          "doc_id": "zulip-channel-posting-policy",
+          "score": 0.5614
+        },
+        {
+          "id": "zulip-archive-a-channel:781-1253",
+          "doc_id": "zulip-archive-a-channel",
+          "score": 0.5378
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-6",
+      "split": "test",
+      "query": "游客可以查看没有订阅的公开频道吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-permissions:5744-6380",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6576
+        },
+        {
+          "id": "zulip-channel-permissions:6380-7177",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6186
+        },
+        {
+          "id": "zulip-configure-who-can-invite-to-channels:698-1161",
+          "doc_id": "zulip-configure-who-can-invite-to-channels",
+          "score": 0.5676
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:687-1484",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5388
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:0-787",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5164
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-7",
+      "split": "test",
+      "query": "私密频道使用 protected history，新加入的人能看之前的消息吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ],
+      "llm_check": true,
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-permissions:2388-3184",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6451
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:1384-2181",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5908
+        },
+        {
+          "id": "zulip-archive-a-channel:2219-2411",
+          "doc_id": "zulip-archive-a-channel",
+          "score": 0.5893
+        },
+        {
+          "id": "zulip-channel-permissions:3782-4579",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.5719
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:0-787",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.571
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-8",
+      "split": "test",
+      "query": "没有加入私密频道的管理员默认能读取里面的聊天吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-permissions:2388-3184",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6033
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:687-1484",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5752
+        },
+        {
+          "id": "zulip-channel-permissions:4479-5276",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.5669
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:0-787",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5351
+        },
+        {
+          "id": "zulip-configure-who-can-administer-a-channel:1346-1933",
+          "doc_id": "zulip-configure-who-can-administer-a-channel",
+          "score": 0.5266
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-9",
+      "split": "test",
+      "query": "web-public 频道未登录也可以阅读吗？",
+      "expected_docs": [
+        "zulip-channel-permissions"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-channel-permissions:6380-7177",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.6764
+        },
+        {
+          "id": "zulip-channel-permissions:7077-7243",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.649
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:687-1484",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5433
+        },
+        {
+          "id": "zulip-configure-who-can-invite-to-channels:698-1161",
+          "doc_id": "zulip-configure-who-can-invite-to-channels",
+          "score": 0.5383
+        },
+        {
+          "id": "zulip-change-the-privacy-of-a-channel:0-787",
+          "doc_id": "zulip-change-the-privacy-of-a-channel",
+          "score": 0.5053
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "query": "集成服务该使用个人 API 密钥还是 bot 的密钥？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 0.5,
+      "hits": [
+        {
+          "id": "zulip-bots-overview:3749-4393",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.6207
+        },
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6064
+        },
+        {
+          "id": "zulip-bots-overview:2713-2976",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.5767
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:0-503",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.5659
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:503-1276",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.5573
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "query": "重新生成个人 API key 对手机端登录有什么影响？",
+      "expected_docs": [
+        "zulip-protect-your-account"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6124
+        },
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.611
+        },
+        {
+          "id": "zulip-logging-out:985-1592",
+          "doc_id": "zulip-logging-out",
+          "score": 0.61
+        },
+        {
+          "id": "zulip-logging-out:736-985",
+          "doc_id": "zulip-logging-out",
+          "score": 0.5613
+        },
+        {
+          "id": "zulip-configure-authentication-methods:0-773",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.5149
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "query": "取消付费套餐后旧消息会马上被删除吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:7025-7326",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5561
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:3415-3763",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5558
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:1324-1992",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.5161
+        },
+        {
+          "id": "zulip-archive-a-channel:0-781",
+          "doc_id": "zulip-archive-a-channel",
+          "score": 0.502
+        },
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.4846
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "query": "使用发票付款可以选择自动管理许可证吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:7673-8016",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6279
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8466-9265",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6105
+        },
+        {
+          "id": "zulip-configure-authentication-methods:1692-2487",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.4888
+        },
+        {
+          "id": "zulip-configure-authentication-methods:0-773",
+          "doc_id": "zulip-configure-authentication-methods",
+          "score": 0.4746
+        },
+        {
+          "id": "zulip-configure-who-can-invite-to-channels:2264-2374",
+          "doc_id": "zulip-configure-who-can-invite-to-channels",
+          "score": 0.4473
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "query": "停用一个成员之后，已经买的剩余许可证是否退款？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "llm_check": true,
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:8466-9265",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.562
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:9165-9865",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5568
+        },
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.4913
+        },
+        {
+          "id": "zulip-logging-out:736-985",
+          "doc_id": "zulip-logging-out",
+          "score": 0.4595
+        },
+        {
+          "id": "zulip-logging-out:140-736",
+          "doc_id": "zulip-logging-out",
+          "score": 0.4505
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "query": "使用手动许可证管理，到达数量上限还能邀请新人加入吗？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:9865-10664",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6212
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8466-9265",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5318
+        },
+        {
+          "id": "zulip-configure-who-can-administer-a-channel:1346-1933",
+          "doc_id": "zulip-configure-who-can-administer-a-channel",
+          "score": 0.5041
+        },
+        {
+          "id": "zulip-channel-permissions:4479-5276",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.4975
+        },
+        {
+          "id": "zulip-bots-overview:3479-3749",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.4947
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "query": "付费期间增加一个许可证，新增费用如何计算？",
+      "expected_docs": [
+        "zulip-zulip-cloud-billing"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:9165-9865",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6664
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:10564-10743",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6603
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "query": "outgoing webhook bot 在什么情况下收到消息？",
+      "expected_docs": [
+        "zulip-bots-overview"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-bots-overview:2022-2813",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.7249
+        },
+        {
+          "id": "zulip-bots-overview:1334-2122",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.6037
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:503-1276",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.5264
+        },
+        {
+          "id": "zulip-channel-permissions:5176-5744",
+          "doc_id": "zulip-channel-permissions",
+          "score": 0.5031
+        },
+        {
+          "id": "zulip-add-a-bot-or-integration:0-503",
+          "doc_id": "zulip-add-a-bot-or-integration",
+          "score": 0.4938
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "query": "如何更换个人账户的电子邮件地址？",
+      "expected_docs": [
+        "zulip-change-your-email-address"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-your-email-address:450-994",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.7417
+        },
+        {
+          "id": "zulip-change-your-email-address:0-450",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.7291
+        },
+        {
+          "id": "zulip-change-your-name:499-929",
+          "doc_id": "zulip-change-your-name",
+          "score": 0.6433
+        },
+        {
+          "id": "zulip-configure-email-visibility:383-923",
+          "doc_id": "zulip-configure-email-visibility",
+          "score": 0.6349
+        },
+        {
+          "id": "zulip-change-your-password:0-307",
+          "doc_id": "zulip-change-your-password",
+          "score": 0.6263
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "query": "怎样更改 Zulip 个人头像？",
+      "expected_docs": [
+        "zulip-change-your-profile-picture"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-your-profile-picture:0-791",
+          "doc_id": "zulip-change-your-profile-picture",
+          "score": 0.7078
+        },
+        {
+          "id": "zulip-change-your-profile-picture:691-1017",
+          "doc_id": "zulip-change-your-profile-picture",
+          "score": 0.6789
+        },
+        {
+          "id": "zulip-change-your-name:0-499",
+          "doc_id": "zulip-change-your-name",
+          "score": 0.6586
+        },
+        {
+          "id": "zulip-change-your-language:1613-2351",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.6301
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.6218
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "query": "如何调整 Zulip 界面的语言？",
+      "expected_docs": [
+        "zulip-change-your-language"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-your-language:1613-2351",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.7625
+        },
+        {
+          "id": "zulip-change-your-language:633-1431",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.7547
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:2427-3023",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.7278
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.6508
+        },
+        {
+          "id": "zulip-change-your-name:0-499",
+          "doc_id": "zulip-change-your-name",
+          "score": 0.6462
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "query": "个人账户的时区怎么修改？",
+      "expected_docs": [
+        "zulip-change-your-timezone"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-your-timezone:697-935",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.7337
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.7067
+        },
+        {
+          "id": "zulip-change-the-time-format:280-536",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.6792
+        },
+        {
+          "id": "zulip-change-the-time-format:0-280",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.6136
+        },
+        {
+          "id": "zulip-configure-default-new-user-settings:667-1424",
+          "doc_id": "zulip-configure-default-new-user-settings",
+          "score": 0.5477
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "query": "如何切换十二小时和二十四小时时间显示？",
+      "expected_docs": [
+        "zulip-change-the-time-format"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-change-the-time-format:0-280",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.6591
+        },
+        {
+          "id": "zulip-change-the-time-format:280-536",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.6103
+        },
+        {
+          "id": "zulip-change-your-timezone:0-697",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.5889
+        },
+        {
+          "id": "zulip-change-your-timezone:935-1080",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.5852
+        },
+        {
+          "id": "zulip-logging-out:0-140",
+          "doc_id": "zulip-logging-out",
+          "score": 0.4572
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "query": "如何在 Zulip 搜索历史消息？",
+      "expected_docs": [
+        "zulip-search-for-messages"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-search-for-messages:3191-3872",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.7114
+        },
+        {
+          "id": "zulip-search-for-messages:5685-6121",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.6905
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:7025-7326",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6573
+        },
+        {
+          "id": "zulip-logging-in:758-1554",
+          "doc_id": "zulip-logging-in",
+          "score": 0.5915
+        },
+        {
+          "id": "zulip-logging-in:1454-2251",
+          "doc_id": "zulip-logging-in",
+          "score": 0.5833
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-24",
+      "split": "test",
+      "query": "如何从当前设备退出 Zulip 账号？",
+      "expected_docs": [
+        "zulip-logging-out"
+      ],
+      "raw_hit_at_5": true,
+      "reciprocal_rank": 1.0,
+      "hits": [
+        {
+          "id": "zulip-logging-out:140-736",
+          "doc_id": "zulip-logging-out",
+          "score": 0.7651
+        },
+        {
+          "id": "zulip-logging-out:736-985",
+          "doc_id": "zulip-logging-out",
+          "score": 0.755
+        },
+        {
+          "id": "zulip-protect-your-account:698-907",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6962
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:3415-3763",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.6616
+        },
+        {
+          "id": "zulip-protect-your-account:0-798",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.6502
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": true
+    },
+    {
+      "id": "test-25",
+      "split": "test",
+      "query": "我的组织下个月的精确应付金额是多少？",
+      "expected_docs": [],
+      "llm_check": true,
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-zulip-cloud-billing:11410-11674",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.4735
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:2406-3072",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.4652
+        },
+        {
+          "id": "zulip-logging-in:2844-3633",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4586
+        },
+        {
+          "id": "zulip-channel-notifications:0-398",
+          "doc_id": "zulip-channel-notifications",
+          "score": 0.4289
+        },
+        {
+          "id": "zulip-logging-in:3533-3846",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4242
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-26",
+      "split": "test",
+      "query": "请告诉我用户小王的登录密码。",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-change-your-password:750-1063",
+          "doc_id": "zulip-change-your-password",
+          "score": 0.5865
+        },
+        {
+          "id": "zulip-logging-in:4539-5177",
+          "doc_id": "zulip-logging-in",
+          "score": 0.5791
+        },
+        {
+          "id": "zulip-change-your-password:0-307",
+          "doc_id": "zulip-change-your-password",
+          "score": 0.5727
+        },
+        {
+          "id": "zulip-logging-out:985-1592",
+          "doc_id": "zulip-logging-out",
+          "score": 0.5687
+        },
+        {
+          "id": "zulip-protect-your-account:907-1513",
+          "doc_id": "zulip-protect-your-account",
+          "score": 0.5606
+        }
+      ],
+      "accepted": true,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-27",
+      "split": "test",
+      "query": "明年 Zulip 一定会推出什么新功能？",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-bots-overview:400-753",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.5639
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8466-9265",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5538
+        },
+        {
+          "id": "zulip-search-for-messages:969-1758",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.5518
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:9165-9865",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.5454
+        },
+        {
+          "id": "zulip-change-your-language:633-1431",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.5451
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-28",
+      "split": "test",
+      "query": "京东订单的快递现在到哪里了？",
+      "expected_docs": [],
+      "llm_check": true,
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-change-your-email-address:450-994",
+          "doc_id": "zulip-change-your-email-address",
+          "score": 0.4287
+        },
+        {
+          "id": "zulip-search-for-messages:3872-4109",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.417
+        },
+        {
+          "id": "zulip-search-for-messages:2342-3140",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.417
+        },
+        {
+          "id": "zulip-zulip-cloud-billing:8016-8466",
+          "doc_id": "zulip-zulip-cloud-billing",
+          "score": 0.4123
+        },
+        {
+          "id": "zulip-logging-in:2151-2844",
+          "doc_id": "zulip-logging-in",
+          "score": 0.4071
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-29",
+      "split": "test",
+      "query": "帮我推荐附近的川菜餐厅。",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-change-your-timezone:697-935",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.3761
+        },
+        {
+          "id": "zulip-change-your-timezone:1080-1677",
+          "doc_id": "zulip-change-your-timezone",
+          "score": 0.3643
+        },
+        {
+          "id": "zulip-change-the-time-format:280-536",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.3523
+        },
+        {
+          "id": "zulip-search-for-messages:3040-3191",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.3506
+        },
+        {
+          "id": "zulip-search-for-messages:2342-3140",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.3496
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    },
+    {
+      "id": "test-30",
+      "split": "test",
+      "query": "给我一份 Python 快速排序代码。",
+      "expected_docs": [],
+      "raw_hit_at_5": false,
+      "reciprocal_rank": 0,
+      "hits": [
+        {
+          "id": "zulip-search-for-messages:4552-5083",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.4128
+        },
+        {
+          "id": "zulip-search-for-messages:5685-6121",
+          "doc_id": "zulip-search-for-messages",
+          "score": 0.4029
+        },
+        {
+          "id": "zulip-bots-overview:400-753",
+          "doc_id": "zulip-bots-overview",
+          "score": 0.3712
+        },
+        {
+          "id": "zulip-change-the-time-format:0-280",
+          "doc_id": "zulip-change-the-time-format",
+          "score": 0.3701
+        },
+        {
+          "id": "zulip-change-your-language:0-633",
+          "doc_id": "zulip-change-your-language",
+          "score": 0.356
+        }
+      ],
+      "accepted": false,
+      "filtered_hit_at_5": false
+    }
+  ],
+  "limitations": "Hand-authored small corpus-specific set. Document hits do not establish answer correctness or evidence sufficiency. No production claims.",
+  "llm_examples": [
+    {
+      "id": "test-2",
+      "query": "Zulip 密码记不得了，如何从登录页面重设？",
+      "expected_answerable": true,
+      "reply": "在组织登录页 `https://<organization-url>/login/`，点击 **Log in** 按钮下方的 **Forgot your password?** 链接，输入邮箱后点击 **Send reset link**。几分钟内会收到确认邮件，打开并点击 **Reset password** 即可。若已登录，请先登出。",
+      "cited_ids": [
+        "zulip-logging-in:4539-5177"
+      ],
+      "status": "answered"
+    },
+    {
+      "id": "test-7",
+      "query": "私密频道使用 protected history，新加入的人能看之前的消息吗？",
+      "expected_answerable": true,
+      "reply": "不能。在 protected history 的私密频道中，新订阅者只能看到他们加入之后发送的消息。",
+      "cited_ids": [
+        "zulip-channel-permissions:2388-3184"
+      ],
+      "status": "answered"
+    },
+    {
+      "id": "test-14",
+      "query": "停用一个成员之后，已经买的剩余许可证是否退款？",
+      "expected_answerable": true,
+      "status": "abstained"
+    },
+    {
+      "id": "test-25",
+      "query": "我的组织下个月的精确应付金额是多少？",
+      "expected_answerable": false,
+      "status": "abstained"
+    },
+    {
+      "id": "test-28",
+      "query": "京东订单的快递现在到哪里了？",
+      "expected_answerable": false,
+      "status": "abstained"
+    }
+  ],
+  "elapsed_seconds": 72.77
+}

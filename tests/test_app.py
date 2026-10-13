@@ -12,7 +12,7 @@ from fastapi.testclient import TestClient
 from app.config import Settings
 from app.knowledge import split_text
 from app.main import create_app
-from app.model import Model, TicketCreate
+from app.model import Model, TicketCreate, NoEvidenceError
 
 
 class SupportFlowTests(unittest.TestCase):
@@ -20,7 +20,7 @@ class SupportFlowTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.settings = Settings(_env_file=None, api_keys="test-owner-a-123456789,test-owner-b-123456789",
                                  db_path=Path(self.temp.name)/"test.sqlite3",
-                                 model_mode="offline", retrieval_mode="lexical")
+                                 model_mode="offline", retrieval_mode="lexical", knowledge_source="faq")
         self.app = create_app(self.settings)
         self.client = TestClient(self.app).__enter__()
         self.a = {"X-API-Key": "test-owner-a-123456789"}
@@ -129,6 +129,13 @@ class SupportFlowTests(unittest.TestCase):
             r = self.chat("创建工单：设备故障").json()
         self.assertEqual(r["handoff_reason"], "tool_failed")
         self.assertEqual(self.client.get("/tickets", headers=self.a).json(), [])
+
+    def test_insufficient_evidence_handoff_keeps_retrieved_sources_uncited(self):
+        with patch.object(self.app.state.model, "answer_grounded", side_effect=NoEvidenceError()):
+            r = self.chat("忘记密码怎么重置？").json()
+        self.assertEqual(r["handoff_reason"], "insufficient_evidence")
+        self.assertTrue(r["sources"])
+        self.assertFalse(any(s["cited"] for s in r["sources"]))
 
     def test_session_persists_after_app_restart(self):
         self.chat("不明确")

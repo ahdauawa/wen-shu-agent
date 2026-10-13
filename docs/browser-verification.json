@@ -1,0 +1,13 @@
+{
+  "documents": 27,
+  "trace": [
+    "classify",
+    "retrieve",
+    "respond"
+  ],
+  "cited_ids": [
+    "zulip-configure-email-visibility:383-923"
+  ],
+  "reply": "可在注册时或桌面/网页端设置。注册时：确认邮箱后，点击邮箱地址下方的 **Change**，配置 **Who can access your email address**，再点击 **Confirm**。桌面/网页端：点击右上角齿轮图标，选择 **Personal settings**，在左侧点击 **Account & privacy**，在 **Privacy** 下配置 **Who can access your email address**。",
+  "javascript_errors": []
+}

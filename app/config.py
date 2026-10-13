@@ -16,7 +16,12 @@ class Settings(BaseSettings):
     llm_model: str = "deepseek-chat"
     llm_timeout: float = Field(default=20, gt=0, le=120)
     retrieval_mode: Literal["lexical", "chroma"] = "lexical"
+    knowledge_source: Literal["documents", "faq"] = "documents"
+    knowledge_dir: Path = Path("knowledge/zulip")
+    chunk_size: int = Field(default=800, ge=100, le=2000)
+    chunk_overlap: int = Field(default=100, ge=0)
     embedding_model: str = "BAAI/bge-m3"
+    embedding_cache_path: Path = Path("data/models")
     chroma_path: Path = Path("data/chroma")
     retrieval_threshold: float = Field(default=0.18, ge=0, le=1)
     intent_threshold: float = Field(default=0.65, ge=0, le=1)
@@ -27,6 +32,8 @@ class Settings(BaseSettings):
 
     @model_validator(mode="after")
     def check_remote_model(self):
+        if self.chunk_overlap >= self.chunk_size:
+            raise ValueError("chunk_overlap must be smaller than chunk_size")
         if self.model_mode == "openai" and not self.llm_api_key.get_secret_value():
             raise ValueError("openai 模式必须设置 WENSHU_LLM_API_KEY")
         return self
