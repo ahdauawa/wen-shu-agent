@@ -1,0 +1,17 @@
+.venv/
+.env
+.env.*
+!.env.example
+.idea/
+__pycache__/
+*.py[cod]
+*.egg-info/
+data/
+!app/data/
+!app/data/*.json
+reports/
+*.log
+.pytest_cache/
+.coverage
+dist/
+build/
